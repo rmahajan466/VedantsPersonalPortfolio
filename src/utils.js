@@ -1,0 +1,1 @@
+export const INSTA_URL = "https://www.instagram.com/ved_.23?igsh=MWVscTMzNjF3ZDU3ag%3D%3D&utm_source=qr";

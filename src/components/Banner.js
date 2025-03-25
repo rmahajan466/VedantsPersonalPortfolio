@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -11,7 +10,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Architect", "Graphic Designer", "Interior Designer" ];
+  const toRotate = [ "Architecture Student", "Interior Designer" ];
   const period = 2000;
 
   useEffect(() => {
@@ -55,16 +54,23 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Vedant`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Architect", "Graphic Designer", "Interior Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <span className="tagline">
+                  Welcome to my Portfolio
+                </span>
+                <h1>
+                  {`Hi! I'm Vedant Hire `}
+                  <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Architecture Student", "Interior Designer" ]'>
+                    <span className="wrap">{text}
+                      </span>
+                    </span>
+                  </h1>
                   <p>
-                    I'm a visionary architect with a passion for designing spaces that seamlessly blend functionality, aesthetics, and sustainability. With years of experience in the field, he specializes in creating innovative architectural solutions that reflect both modern trends and timeless elegance.
+                    I'm a visionary architect with a passion for designing spaces that seamlessly blend functionality, aesthetics, and sustainability. With little experience in the field, I specializes in creating innovative architectural solutions that reflect both modern trends and timeless elegance.
                     <br />
-                    From residential homes to commercial structures, Vedant approaches each project with a keen eye for detail and a deep understanding of client needs. His expertise in architectural design, urban planning, and interior spaces ensures that every structure he designs is not just visually stunning but also practical and sustainable.
+                    From residential homes to commercial structures, I approaches each project with a keen eye for detail and a deep understanding of client needs. My expertise in architectural design, urban planning, and interior spaces ensures that every structure I designs is not just visually stunning but also practical and sustainable.
                     <br />
-                    Driven by creativity and precision, Vedant Hire transforms ideas into reality, crafting spaces that inspire and elevate the way people live and work.
+                    Driven by creativity and precision, I transforms ideas into reality, crafting spaces that inspire and elevate the way people live and work.
                   </p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
