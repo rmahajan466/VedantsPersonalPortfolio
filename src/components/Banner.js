@@ -71,6 +71,25 @@ export const Banner = () => {
                     <br />
                     Driven by creativity and precision, I transforms ideas into reality, crafting spaces that inspire and elevate the way people live and work.
                   </p>
+                  <a href="https://drive.google.com/file/d/1aWQBeYPvLGDF1a8Wklak7DjUMAgsITVE/view?usp=drivesdk" target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
+                  <button style={{
+                    display: 'inline-block',
+                    padding: '15px 30px',
+                    fontSize: '20px',
+                    fontWeight: 'bold',
+                    color: 'white',
+                    background: 'linear-gradient(135deg, #8e2de2, #4a00e0)',
+                    border: '2px solid rgba(255, 255, 255, 0.6)',
+                    textDecoration: 'none',
+                    borderRadius: '6px',
+                    transition: 'all 0.3s ease',
+                    boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)',
+                    cursor: 'pointer',
+                  }}>
+                    <span>My Resume</span>
+                  </button>
+                </a>
+
               </div>}
             </TrackVisibility>
           </Col>
